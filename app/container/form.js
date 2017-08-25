@@ -1,4 +1,4 @@
-import {submitAction} from "../action/submitAction";
+import {submitForm} from "../action/submitAction";
 import {connect} from 'react-redux'
 import SimpleForm  from "../component/form";
 const mapDispatchToProps=(dispatch)=>{
@@ -6,7 +6,7 @@ const mapDispatchToProps=(dispatch)=>{
 
         submitValues:(values)=>{
             console.log('2')
-            dispatch(submitAction(values))
+            dispatch(submitForm(values))
         }
     }
 }
